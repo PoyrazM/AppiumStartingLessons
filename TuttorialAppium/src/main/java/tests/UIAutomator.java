@@ -23,8 +23,8 @@ public class UIAutomator extends BaseTest {
         // Validate clickable feature for all options
         // Syntax = driver.findElement(MobileBy.AndroidUIAutomator("new UiSelector().property(value)"));
 
-        System.out.println(driver.findElement(MobileBy.AndroidUIAutomator("new UiSelector().clickable(true)"))
-                .getSize());
+        System.out.println(driver.findElements(MobileBy.AndroidUIAutomator("new UiSelector().clickable(true)"))
+                .size());
 
         if (driver !=null){
             driver.quit();
